@@ -1,0 +1,43 @@
+body {
+	font-family: 'Lora', serif;
+	line-height: 1.75;
+	margin: 0 auto;
+	color: #363432;
+	background: #dbdcdb;
+}
+
+header {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9)), url("./header.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0 auto;
+	padding: 12vw 1em 6vw;
+}
+
+#logo {
+	display: inline-block;
+	vertical-align: top;
+}
+
+header h1 {
+	color: #c7622b;
+	font-size: 2.5em;
+	font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+main {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+footer {
+	padding-bottom: 5em;
+}

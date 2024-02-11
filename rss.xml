@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   <title>μSoldering Subscription Feed</title>
+   <description>Various reverse-engineering/extracted netlists/PCB panoramas/general updates from the μSoldering brand.</description>
+   <link>https://www.usoldering.com</link>
+   <atom:link href="https://usoldering.com/rss.xml" rel="self" type="application/rss+xml" />
+   <item>
+     <title>Switch Lite Netlist Extraction at 6,000 Pixels Per Inch</title>
+     <link>https://usoldering.com/switch-lite/</link>
+     <guid>https://usoldering.com/switch-lite/</guid>
+     <pubDate>Sun, 11 Feb 2024 09:15:00 EST</pubDate>
+   </item>
+</channel>
+</rss>
