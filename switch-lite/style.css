@@ -7,7 +7,7 @@ body {
 }
 
 header {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9)), url("./header.jpg");
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.9)), url("./images/header.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -43,6 +43,16 @@ date {
 main {
     max-width: 50em;
     margin: 0 auto;
+}
+
+img {
+	display: block;
+	margin: 3em auto 1em;
+}
+
+div {
+	display: flex;
+	justify-content: center;
 }
 
 footer {
