@@ -14,6 +14,7 @@ header {
 	text-align: center;
 	margin: 0 auto;
 	padding: 12vw 1em 6vw;
+	margin-bottom: 3em;
 }
 
 #logo {
@@ -31,6 +32,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 	margin: 0 auto;
 	padding-top: 1em;
+}
+
+date {
+	padding: 2em;
+	position: absolute;
+    right: 0;
 }
 
 main {
