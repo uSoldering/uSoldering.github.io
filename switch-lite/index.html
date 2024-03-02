@@ -13,11 +13,11 @@
 </head>
 <body>
     <header>
-        <img id="logo" src="../images/logo.png">
+        <img id="logo" src="../images/logo.png" alt="Logo">
         <h1>Reverse-Engineering a Switch Lite Boardview at 6,000 Pixels Per Inch</h1>
     </header>
     <main>
-        <h2>Instructions to View</h2>
+        <h2>Instructions for Boardview</h2>
         <ol>
             <li><a href="https://github.com/OpenBoardView/OpenBoardView/releases">Download</a> the latest release of OpenBoardView.</li>
             <li><a href="./files/switch-lite-logic-board-boardview_archive.torrent">Torrent</a> or <a href="https://archive.org/details/switch-lite-logic-board-boardview">Download</a> the release data, unzip it, and read all included .txt files.</li>
@@ -25,6 +25,7 @@
             <li>Left-click to view parts/pad nets or click and drag to move, mouse-wheel to zoom, and middle-click or spacebar to flip sides.</li>
         </ol>
         <img src="./images/demo.jpg" alt="Small demo of output files">
+
         <h2>What is this?</h2>
 	    <p>This is the output data for a process I solo-developed for extracting the netlist from an assembled Printed Circuit Board, in this case, a Nintendo Switch Lite logic board. Electrical components are soldered to exposed mounting pads on the PCB, and layers of copper form connections between these pads creating electrical circuits. The full list of these interconnects is called the netlist, and when combined with the part and pad geometries, constitute a boardview. Couple that boardview with reference images of both sides of the PCB, and you have the output data.</p>
         <h2>How?</h2>
@@ -50,9 +51,9 @@
         </p>
         <img src="./images/meme.jpg" alt="Homemade flying probe meme">
         <h2>Limitations</h2>
-        <p>You may have noticed the panoramas are actually at 2,000 PPI. That's because the 6,000 PPI versions are half a gigapixel, each. This causes problems. With everything. You can <a href="./files/switch-lite-logic-board-6k-ppi_archive.torrent">Torrent</a> or <a href="https://archive.org/details/switch-lite-logic-board-6k-ppi">Download</a> them here.</p>
+        <p><s>You may have noticed the panoramas are actually at 2,000 PPI. That's because the 6,000 PPI versions are half a gigapixel, each. This causes problems. With everything. You can <a href="./files/switch-lite-logic-board-6k-ppi_archive.torrent">Torrent</a> or <a href="https://archive.org/details/switch-lite-logic-board-6k-ppi">Download</a> them here.</s> Courtesy of ZoomHub, you can now view the <a href="https://zoomhub.net/J9wa2">top-side</a> and <a href="https://zoomhub.net/yzV83">bottom-side</a> panoramas from anywhere!</p>
         <p>You may also notice the part/pad outlines are rather simple. That's because the complex rendering feature is currently <a href="https://github.com/OpenBoardView/OpenBoardView/blob/8528b80cdc4928c220b552a772dff84ba3679cd5/src/openboardview/FileFormats/BVR3File.cpp#L110">not supported</a> in OBV. The data is all there, and all files are cross-compatible with the premium, closed-source fork of OBV, <a href="https://pldaniels.com/flexbv5/">FlexBV5</a>.</p>
-        <p>Step One, post-RF Shield de-solder and Step Seven, pre-extraction, there should be ultrasonic cleaning cycles. It takes many tricks to get the RF Shields off without resorting to using low-melt (bismuth) solder. This is why the topside panorama is filthy compared to the bottomside one. There is also some risk pre-extraction that the flux residues can be conductive enough to cause false-positive connections between net-fragments. I don't have an ultrasonic.</p>
+        <p>Step One, post-RF Shield de-solder and Step Seven, pre-extraction, there should be ultrasonic cleaning cycles. It takes many tricks to get the RF Shields off without resorting to using low-melt (bismuth) solder. This is why the top-side panorama is filthy compared to the bottom-side one. There is also some risk pre-extraction that the flux residues can be conductive enough to cause false-positive connections between net-fragments. I don't have an ultrasonic.</p>
         <p>There's also a missing step between Step Eight and Nine. That is to take all the parts out of their bins and measure their electrical properties. I have a basic, low-accuracy LCR Meter, but testing them now would result in relatively low-quality and incomplete data.</p>
         <h2>Why?</h2>
         <p>My background is over a decade in Electronics Contract Manufacturing serving the medical, aerospace, military, and industrial sectors. More than half of that time is as a SMT Process Technician, with full read/write access to millions of dollars of state-of-the-art equipment. Therein lies the trap: you end up overspecialized, dependant on someone else's unaffordable equipment. Sprinkle in some monthly payments, insurance, ever-moving goalposts, and the mass psychosis of modern corporate dogma; it becomes an elaborate prison.</p>
